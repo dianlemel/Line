@@ -8,6 +8,7 @@ var bot = linebot({
     channelAccessToken: 'tEiKGNqO3jaKqD1Jom0rAodKJB3M7FRr7RntWR1w6X8x9b7Il7ym7bVPtuYAPGOnD8BerCcpgjfGwWD1MCFWAU9wRkLLHQaYRl87c/y48F1CQLUrINtVf2F/U67qiaVRwAMrmRegmYe2mWVplcmP9wdB04t89/1O/w1cDnyilFU='
 });
 
+
 var message = {
     "你好":"我不好",
     "你是誰":"我是ㄐ器人"
