@@ -31,5 +31,12 @@ app.post('/', linebotParser);
 
 var server = app.listen(process.env.PORT || 8080, function () {
     var port = server.address().port;
+    bot.push('U1372640af7b78a14c4aa235890c86f1e','Server is ready');
     console.log("App now running on port", port);
+});
+process.on('exit', (code) => {
+    console.log(`About to exit with code: ${code}`);
+});
+process.on('SIGINT', function() {
+    console.log('Got SIGINT.  Press Control-D/Control-C to exit.');
 });
