@@ -34,12 +34,3 @@ var server = app.listen(process.env.PORT || 8080, function () {
     bot.push('U1372640af7b78a14c4aa235890c86f1e','Server is ready');
     console.log("App now running on port", port);
 });
-process.on('exit', (code) => {
-    console.log('EXIT======================================================');
-});
-process.on('SIGINT', function() {
-    console.log('EXIT======================================================');
-});
-process.on('SIGTERM', function() {
-    console.log('EXIT======================================================');
-});
