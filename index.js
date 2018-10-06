@@ -35,8 +35,11 @@ var server = app.listen(process.env.PORT || 8080, function () {
     console.log("App now running on port", port);
 });
 process.on('exit', (code) => {
-    console.log(`About to exit with code: ${code}`);
+    console.log('EXIT======================================================');
 });
 process.on('SIGINT', function() {
-    console.log('Got SIGINT.  Press Control-D/Control-C to exit.');
+    console.log('EXIT======================================================');
+});
+process.on('SIGTERM', function() {
+    console.log('EXIT======================================================');
 });
